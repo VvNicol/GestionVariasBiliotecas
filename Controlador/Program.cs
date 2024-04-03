@@ -5,6 +5,8 @@ namespace GestionBilioteca.Controlador
 {
     internal class Program
     {
+
+
         static List<BibliotecaDto> listaBibliotecas = new List<BibliotecaDto>();
         static List<ClienteDtos> listaClientes = new List<ClienteDtos>();
         static List<LibroDtos> listaLibro = new List<LibroDtos>();
@@ -30,13 +32,13 @@ namespace GestionBilioteca.Controlador
                             oi.AltaBiblioteca(listaBibliotecas);
                             break;
                         case 2:
-                            oi.AltaCliente(listaClientes);
+                            //oi.AltaCliente(listaClientes);
                             break;
                         case 3:
-                            oi.AltaLibro(listaLibro);
+                            //oi.AltaLibro(listaLibro);
                             break;
                         case 4:
-                            oi.AltaPrestamos();
+                            //oi.AltaPrestamos();
                             break;
                         default: Console.WriteLine("La opcion no existe");
                             break;
