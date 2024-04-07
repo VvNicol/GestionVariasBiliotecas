@@ -8,11 +8,12 @@ namespace GestionBilioteca.Dtos
 {
     internal class LibroDtos
     {
+        long id;
         string tituloLibro = "aaaaa";
         string subtituloLibro = "aaaaa";
         string autorLibro = "aaaaa";
         string isbnLibro = "aaaaa";
-        string numeroEdicionLibro = "aaaaa";
+        int numeroEdicionLibro = 11111;
         string editorialLibro = "aaaaa";
         string stockLibro = "aaaaa";
     }

@@ -10,6 +10,7 @@ namespace GestionBilioteca.Controlador
         static List<BibliotecaDto> listaBibliotecas = new List<BibliotecaDto>();
         static List<ClienteDtos> listaClientes = new List<ClienteDtos>();
         static List<LibroDtos> listaLibro = new List<LibroDtos>();
+        static List<PrestamoDtos> listaPrestamo = new List<PrestamoDtos>();
         static void Main(string[] args)
         {
             MenuInterface mi = new MenuImplementacion();
@@ -32,7 +33,7 @@ namespace GestionBilioteca.Controlador
                             oi.AltaBiblioteca(listaBibliotecas);
                             break;
                         case 2:
-                            //oi.AltaCliente(listaClientes);
+                            oi.AltaCliente(listaClientes);
                             break;
                         case 3:
                             //oi.AltaLibro(listaLibro);

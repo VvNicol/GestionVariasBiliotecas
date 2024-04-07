@@ -10,23 +10,29 @@ namespace GestionBilioteca.Dtos
     {
         long id;
         string nombreBiblioteca = "aaaaa";
-        string direccionBiliblioreca = "aaaaa";
+        string direccionBiliblioteca = "aaaaa";
 
-
-
+        override
+        public string ToString()
+        {
+            string infoString = $"id: {id} \n" +
+                $"Biblioteca: {nombreBiblioteca}\n" +
+                $"Direccion: {direccionBiliblioteca}";
+            return infoString;
+        }
         public BibliotecaDto()
         {
         }
 
-        public BibliotecaDto(long id, string nombreBiblioteca, string direccionBiliblioreca)
+        public BibliotecaDto(long id, string nombreBiblioteca, string direccionBiliblioteca)
         {
             this.id = id;
             this.nombreBiblioteca = nombreBiblioteca;
-            this.direccionBiliblioreca = direccionBiliblioreca;
+            this.direccionBiliblioteca = direccionBiliblioteca;
         }
 
         public long Id { get => id; set => id = value; }
         public string NombreBiblioteca { get => nombreBiblioteca; set => nombreBiblioteca = value; }
-        public string DireccionBiliblioreca { get => direccionBiliblioreca; set => direccionBiliblioreca = value; }
+        public string DireccionBiliblioteca { get => direccionBiliblioteca; set => direccionBiliblioteca = value; }
     }
 }
