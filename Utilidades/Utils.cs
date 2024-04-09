@@ -39,15 +39,43 @@ namespace GestionBilioteca.Utilidades
             }
             return idCalcular;
         }
+        public static long calcularIdLibro(List<LibroDtos> listaL)
+        {
+            long idCalcular;
+            int tamanioLista = listaL.Count;
 
-        public static void mostrarBibliotecas(List<BibliotecaDto> listaC)
+            if (tamanioLista > 0)
+            {
+                idCalcular = listaL.Count() + 1;
+            }
+            else
+            {
+                idCalcular = 1;
+            }
+            return idCalcular;
+        }
+
+        public static void mostrarBibliotecas(List<BibliotecaDto> listaBiblioteca)
         {            
-            Console.WriteLine("Bibliotecas");
+            Console.WriteLine("Bibliotecas: ");
+            Console.WriteLine("------------");
 
-            foreach (BibliotecaDto bibli in listaC)
+            foreach (BibliotecaDto bibli in listaBiblioteca)
             {
                 Console.WriteLine(bibli.ToString());
             }
         }
+
+        public static void mostrarClientes(List<ClienteDtos> listaClientes)
+        {
+            Console.WriteLine("Clientes: ");
+            Console.WriteLine("------------");
+
+            foreach (ClienteDtos cliente in listaClientes)
+            {
+                Console.WriteLine(cliente.ToString());
+            }
+        }
+
     }
 }

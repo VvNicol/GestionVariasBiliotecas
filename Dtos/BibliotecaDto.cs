@@ -15,9 +15,11 @@ namespace GestionBilioteca.Dtos
         override
         public string ToString()
         {
-            string infoString = $"id: {id} \n" +
+            string infoString =
+                $"id: {id} \n" +
                 $"Biblioteca: {nombreBiblioteca}\n" +
-                $"Direccion: {direccionBiliblioteca}";
+                $"------------------------------";
+
             return infoString;
         }
         public BibliotecaDto()

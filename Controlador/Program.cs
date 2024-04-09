@@ -33,10 +33,10 @@ namespace GestionBilioteca.Controlador
                             oi.AltaBiblioteca(listaBibliotecas);
                             break;
                         case 2:
-                            oi.AltaCliente(listaClientes);
+                            oi.AltaCliente(listaClientes, listaBibliotecas);
                             break;
                         case 3:
-                            //oi.AltaLibro(listaLibro);
+                            oi.AltaLibro(listaLibro, listaBibliotecas,listaClientes);
                             break;
                         case 4:
                             //oi.AltaPrestamos();
